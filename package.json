@@ -1,0 +1,25 @@
+{
+  "name": "TS_BOT_Scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasprechtl/TS_BOT_Scripts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasprechtl/TS_BOT_Scripts/issues"
+  },
+  "homepage": "https://github.com/jonasprechtl/TS_BOT_Scripts#readme",
+  "dependencies": {
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
+  }
+}
