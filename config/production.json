@@ -1,0 +1,7 @@
+{
+    "ts3client":{
+        "apikey":"xxx",
+        "connecttimeout":8000,
+        "cmdsuccessmessage":"error id=0 msg=ok"
+    }
+}

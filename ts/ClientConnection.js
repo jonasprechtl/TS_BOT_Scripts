@@ -12,6 +12,7 @@ class ClientConnection{
 
     ClientID = null;
     CurrentChannelID = null;
+    CurrentChannelPWD = null;
 
     AllChannels = Array();
 
@@ -87,7 +88,7 @@ class ClientConnection{
 
     async clientmove(ChannelID, ChannelPassword = null){
 
-        winston.info("Moving Channel");
+        winston.info("Moving Client to other Channel Channel");
 
         let result = "";
 
@@ -100,6 +101,12 @@ class ClientConnection{
         if(!wasCommandSuccessfull(result)) {
             winston.info("Error while moving Channel", {response:result})
             return false;
+        }
+
+        if(ChannelPassword != null){
+            this.CurrentChannelPWD = ChannelPassword;
+        }else{
+            this.CurrentChannelPWD = null;
         }
 
         winston.info("Successfully moved channel, reloading with Whoami Command")

@@ -1,0 +1,6 @@
+{
+    "ts3client":{
+        "apikey":"xxx",
+        "connecttimeout":8000
+    }
+}
